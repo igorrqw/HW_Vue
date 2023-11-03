@@ -9,17 +9,16 @@
             </div>
         </div>
     </section>
-    <!-- ________________________buttoms -->
+
     <section>
         <div class="buttons_project center">
             <button class="buttonCards" @click="changeArticle(item.id)" v-for="item in buttoms" :key="item.id">{{
                 item.name_button }}</button>
-
         </div>
     </section>
     <section id="app" class="project-cards center">
         <div class="project-card" v-for="item in currentArticle" :key="item.id">
-            <img class="cards-photo" :src="item.cards_photo" alt="">
+            <img class="cards-photo" :src="item.product_card" alt="">
             <div class="for-star">
                 <svg class="cards-star" @click="clickstarlike" xmlns="http://www.w3.org/2000/svg" width="36" height="35"
                     viewBox="0 0 36 35" fill="none">
@@ -72,54 +71,54 @@ export default {
     data() {
         return {
             articles: [
-                { id: 'Bathroom', cards_photo: require('../assets/img/project/Photo2.jpg'), title_description: 'Minimal Bedroom', title_decor: 'Decor / Artchitecture' },
-                { id: 'Bathroom', cards_photo: require('../assets/img/project/Photo3.jpg'), title_description: 'Classic Minimal Bedroom', title_decor: 'Decor / Artchitecture' },
-                { id: 'Bathroom', cards_photo: require('../assets/img/project/Photo4.jpg'), title_description: 'Minimal Bedroom table', title_decor: 'Decor / Artchitecture' },
-                { id: 'Bathroom', cards_photo: require('../assets/img/project/Photo5.jpg'), title_description: 'Modern Medroom', title_decor: 'Decor / Artchitecture' },
-                { id: 'Bathroom', cards_photo: require('../assets/img/project/Photo6.jpg'), title_description: 'Minimal Bedroom', title_decor: 'Decor / Artchitecture' },
-                { id: 'Bathroom', cards_photo: require('../assets/img/project/Photo7.jpg'), title_description: 'Modern Bedroom', title_decor: 'Decor / Artchitecture' },
-                { id: 'Bathroom', cards_photo: require('../assets/img/project/Photo9.jpg'), title_description: 'System Table', title_decor: 'Decor / Artchitecture' },
-                { id: 'Bathroom', cards_photo: require('../assets/img/project/Photo8.jpg'), title_description: 'Modern Bedroom', title_decor: 'Decor / Artchitecture' },
+                { id: 'Bathroom', product_card: require('../assets/img/project/Photo2.jpg'), title_description: 'Minimal Bedroom', title_decor: 'Decor / Artchitecture' },
+                { id: 'Bathroom', product_card: require('../assets/img/project/Photo3.jpg'), title_description: 'Classic Minimal Bedroom', title_decor: 'Decor / Artchitecture' },
+                { id: 'Bathroom', product_card: require('../assets/img/project/Photo4.jpg'), title_description: 'Minimal Bedroom table', title_decor: 'Decor / Artchitecture' },
+                { id: 'Bathroom', product_card: require('../assets/img/project/Photo5.jpg'), title_description: 'Modern Medroom', title_decor: 'Decor / Artchitecture' },
+                { id: 'Bathroom', product_card: require('../assets/img/project/Photo6.jpg'), title_description: 'Minimal Bedroom', title_decor: 'Decor / Artchitecture' },
+                { id: 'Bathroom', product_card: require('../assets/img/project/Photo7.jpg'), title_description: 'Modern Bedroom', title_decor: 'Decor / Artchitecture' },
+                { id: 'Bathroom', product_card: require('../assets/img/project/Photo9.jpg'), title_description: 'System Table', title_decor: 'Decor / Artchitecture' },
+                { id: 'Bathroom', product_card: require('../assets/img/project/Photo8.jpg'), title_description: 'Modern Bedroom', title_decor: 'Decor / Artchitecture' },
 
-                { id: 'BedRoom', cards_photo: require('../assets/img/project/Photo4.jpg'), title_description: 'Minimal Bedroom', title_decor: 'Decor / Artchitecture' },
-                { id: 'BedRoom', cards_photo: require('../assets/img/project/Photo3.jpg'), title_description: 'Classic Minimal Bedroom', title_decor: 'Decor / Artchitecture' },
-                { id: 'BedRoom', cards_photo: require('../assets/img/project/Photo2.jpg'), title_description: 'Minimal Bedroom table', title_decor: 'Decor / Artchitecture' },
-                { id: 'BedRoom', cards_photo: require('../assets/img/project/Photo5.jpg'), title_description: 'Modern Medroom', title_decor: 'Decor / Artchitecture' },
-                { id: 'BedRoom', cards_photo: require('../assets/img/project/Photo7.jpg'), title_description: 'Minimal Bedroom', title_decor: 'Decor / Artchitecture' },
-                { id: 'BedRoom', cards_photo: require('../assets/img/project/Photo6.jpg'), title_description: 'Modern Bedroom', title_decor: 'Decor / Artchitecture' },
-                { id: 'BedRoom', cards_photo: require('../assets/img/project/Photo9.jpg'), title_description: 'System Table', title_decor: 'Decor / Artchitecture' },
-                { id: 'BedRoom', cards_photo: require('../assets/img/project/Photo8.jpg'), title_description: 'Modern Bedroom', title_decor: 'Decor / Artchitecture' },
+                { id: 'BedRoom', product_card: require('../assets/img/project/Photo4.jpg'), title_description: 'Minimal Bedroom', title_decor: 'Decor / Artchitecture' },
+                { id: 'BedRoom', product_card: require('../assets/img/project/Photo3.jpg'), title_description: 'Classic Minimal Bedroom', title_decor: 'Decor / Artchitecture' },
+                { id: 'BedRoom', product_card: require('../assets/img/project/Photo2.jpg'), title_description: 'Minimal Bedroom table', title_decor: 'Decor / Artchitecture' },
+                { id: 'BedRoom', product_card: require('../assets/img/project/Photo5.jpg'), title_description: 'Modern Medroom', title_decor: 'Decor / Artchitecture' },
+                { id: 'BedRoom', product_card: require('../assets/img/project/Photo7.jpg'), title_description: 'Minimal Bedroom', title_decor: 'Decor / Artchitecture' },
+                { id: 'BedRoom', product_card: require('../assets/img/project/Photo6.jpg'), title_description: 'Modern Bedroom', title_decor: 'Decor / Artchitecture' },
+                { id: 'BedRoom', product_card: require('../assets/img/project/Photo9.jpg'), title_description: 'System Table', title_decor: 'Decor / Artchitecture' },
+                { id: 'BedRoom', product_card: require('../assets/img/project/Photo8.jpg'), title_description: 'Modern Bedroom', title_decor: 'Decor / Artchitecture' },
 
-                { id: 'Kitchan', cards_photo: require('../assets/img/project/Photo7.jpg'), title_description: 'Minimal Bedroom', title_decor: 'Decor / Artchitecture' },
-                { id: 'Kitchan', cards_photo: require('../assets/img/project/Photo8.jpg'), title_description: 'Classic Minimal Bedroom', title_decor: 'Decor / Artchitecture' },
-                { id: 'Kitchan', cards_photo: require('../assets/img/project/Photo4.jpg'), title_description: 'Minimal Bedroom table', title_decor: 'Decor / Artchitecture' },
-                { id: 'Kitchan', cards_photo: require('../assets/img/project/Photo5.jpg'), title_description: 'Modern Medroom', title_decor: 'Decor / Artchitecture' },
-                { id: 'Kitchan', cards_photo: require('../assets/img/project/Photo6.jpg'), title_description: 'Minimal Bedroom', title_decor: 'Decor / Artchitecture' },
-                { id: 'Kitchan', cards_photo: require('../assets/img/project/Photo2.jpg'), title_description: 'Modern Bedroom', title_decor: 'Decor / Artchitecture' },
-                { id: 'Kitchan', cards_photo: require('../assets/img/project/Photo9.jpg'), title_description: 'System Table', title_decor: 'Decor / Artchitecture' },
-                { id: 'Kitchan', cards_photo: require('../assets/img/project/Photo3.jpg'), title_description: 'Modern Bedroom', title_decor: 'Decor / Artchitecture' },
+                { id: 'Kitchan', product_card: require('../assets/img/project/Photo7.jpg'), title_description: 'Minimal Bedroom', title_decor: 'Decor / Artchitecture' },
+                { id: 'Kitchan', product_card: require('../assets/img/project/Photo8.jpg'), title_description: 'Classic Minimal Bedroom', title_decor: 'Decor / Artchitecture' },
+                { id: 'Kitchan', product_card: require('../assets/img/project/Photo4.jpg'), title_description: 'Minimal Bedroom table', title_decor: 'Decor / Artchitecture' },
+                { id: 'Kitchan', product_card: require('../assets/img/project/Photo5.jpg'), title_description: 'Modern Medroom', title_decor: 'Decor / Artchitecture' },
+                { id: 'Kitchan', product_card: require('../assets/img/project/Photo6.jpg'), title_description: 'Minimal Bedroom', title_decor: 'Decor / Artchitecture' },
+                { id: 'Kitchan', product_card: require('../assets/img/project/Photo2.jpg'), title_description: 'Modern Bedroom', title_decor: 'Decor / Artchitecture' },
+                { id: 'Kitchan', product_card: require('../assets/img/project/Photo9.jpg'), title_description: 'System Table', title_decor: 'Decor / Artchitecture' },
+                { id: 'Kitchan', product_card: require('../assets/img/project/Photo3.jpg'), title_description: 'Modern Bedroom', title_decor: 'Decor / Artchitecture' },
 
 
-                { id: 'LivingArea', cards_photo: require('../assets/img/project/Photo4.jpg'), title_description: 'Minimal Bedroom', title_decor: 'Decor / Artchitecture' },
-                { id: 'LivingArea', cards_photo: require('../assets/img/project/Photo2.jpg'), title_description: 'Classic Minimal Bedroom', title_decor: 'Decor / Artchitecture' },
-                { id: 'LivingArea', cards_photo: require('../assets/img/project/Photo3.jpg'), title_description: 'Minimal Bedroom table', title_decor: 'Decor / Artchitecture' },
-                { id: 'LivingArea', cards_photo: require('../assets/img/project/Photo5.jpg'), title_description: 'Modern Medroom', title_decor: 'Decor / Artchitecture' },
-                { id: 'LivingArea', cards_photo: require('../assets/img/project/Photo6.jpg'), title_description: 'Minimal Bedroom', title_decor: 'Decor / Artchitecture' },
-                { id: 'LivingArea', cards_photo: require('../assets/img/project/Photo7.jpg'), title_description: 'Modern Bedroom', title_decor: 'Decor / Artchitecture' },
-                { id: 'LivingArea', cards_photo: require('../assets/img/project/Photo8.jpg'), title_description: 'System Table', title_decor: 'Decor / Artchitecture' },
-                { id: 'LivingArea', cards_photo: require('../assets/img/project/Photo9.jpg'), title_description: 'Modern Bedroom', title_decor: 'Decor / Artchitecture' },
+                { id: 'LivingArea', product_card: require('../assets/img/project/Photo4.jpg'), title_description: 'Minimal Bedroom', title_decor: 'Decor / Artchitecture' },
+                { id: 'LivingArea', product_card: require('../assets/img/project/Photo2.jpg'), title_description: 'Classic Minimal Bedroom', title_decor: 'Decor / Artchitecture' },
+                { id: 'LivingArea', product_card: require('../assets/img/project/Photo3.jpg'), title_description: 'Minimal Bedroom table', title_decor: 'Decor / Artchitecture' },
+                { id: 'LivingArea', product_card: require('../assets/img/project/Photo5.jpg'), title_description: 'Modern Medroom', title_decor: 'Decor / Artchitecture' },
+                { id: 'LivingArea', product_card: require('../assets/img/project/Photo6.jpg'), title_description: 'Minimal Bedroom', title_decor: 'Decor / Artchitecture' },
+                { id: 'LivingArea', product_card: require('../assets/img/project/Photo7.jpg'), title_description: 'Modern Bedroom', title_decor: 'Decor / Artchitecture' },
+                { id: 'LivingArea', product_card: require('../assets/img/project/Photo8.jpg'), title_description: 'System Table', title_decor: 'Decor / Artchitecture' },
+                { id: 'LivingArea', product_card: require('../assets/img/project/Photo9.jpg'), title_description: 'Modern Bedroom', title_decor: 'Decor / Artchitecture' },
 
             ],
 
             currentArticle: [
-                { id: 'Bathroom', cards_photo: require('../assets/img/project/Photo7.jpg'), title_description: 'Minimal Bedroom', title_decor: 'Decor / Artchitecture' },
-                { id: 'Bathroom', cards_photo: require('../assets/img/project/Photo5.jpg'), title_description: 'Classic Minimal Bedroom', title_decor: 'Decor / Artchitecture' },
-                { id: 'Bathroom', cards_photo: require('../assets/img/project/Photo4.jpg'), title_description: 'Minimal Bedroom table', title_decor: 'Decor / Artchitecture' },
-                { id: 'Bathroom', cards_photo: require('../assets/img/project/Photo3.jpg'), title_description: 'Modern Medroom', title_decor: 'Decor / Artchitecture' },
-                { id: 'Bathroom', cards_photo: require('../assets/img/project/Photo6.jpg'), title_description: 'Minimal Bedroom', title_decor: 'Decor / Artchitecture' },
-                { id: 'Bathroom', cards_photo: require('../assets/img/project/Photo2.jpg'), title_description: 'Modern Bedroom', title_decor: 'Decor / Artchitecture' },
-                { id: 'Bathroom', cards_photo: require('../assets/img/project/Photo9.jpg'), title_description: 'System Table', title_decor: 'Decor / Artchitecture' },
-                { id: 'Bathroom', cards_photo: require('../assets/img/project/Photo8.jpg'), title_description: 'Modern Bedroom', title_decor: 'Decor / Artchitecture' },
+                { id: 'Bathroom', product_card: require('../assets/img/project/Photo7.jpg'), title_description: 'Minimal Bedroom', title_decor: 'Decor / Artchitecture' },
+                { id: 'Bathroom', product_card: require('../assets/img/project/Photo5.jpg'), title_description: 'Classic Minimal Bedroom', title_decor: 'Decor / Artchitecture' },
+                { id: 'Bathroom', product_card: require('../assets/img/project/Photo4.jpg'), title_description: 'Minimal Bedroom table', title_decor: 'Decor / Artchitecture' },
+                { id: 'Bathroom', product_card: require('../assets/img/project/Photo3.jpg'), title_description: 'Modern Medroom', title_decor: 'Decor / Artchitecture' },
+                { id: 'Bathroom', product_card: require('../assets/img/project/Photo6.jpg'), title_description: 'Minimal Bedroom', title_decor: 'Decor / Artchitecture' },
+                { id: 'Bathroom', product_card: require('../assets/img/project/Photo2.jpg'), title_description: 'Modern Bedroom', title_decor: 'Decor / Artchitecture' },
+                { id: 'Bathroom', product_card: require('../assets/img/project/Photo9.jpg'), title_description: 'System Table', title_decor: 'Decor / Artchitecture' },
+                { id: 'Bathroom', product_card: require('../assets/img/project/Photo8.jpg'), title_description: 'Modern Bedroom', title_decor: 'Decor / Artchitecture' },
             ],
 
             buttoms: [

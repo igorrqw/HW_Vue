@@ -3,7 +3,8 @@
   <!-- <homePage/>
    <blogDitails/>
    <blog/> -->
-  <projectPage />
+  <projectDitails />
+  <!-- <projectPage /> -->
   <footerVue />
   <!-- <productDetails/> -->
 </template>
@@ -16,9 +17,10 @@ import blogDitails from './components/blogDitails.vue';
 import blog from './components/blog.vue';
 import productDetails from './components/productDetails.vue';
 import projectPage from './components/projectPage.vue';
+import projectDitails from './components/projectDitails.vue';
 export default {
   components: {
-    headerVue, homePage, footerVue, blogDitails, blog, productDetails, projectPage
+    headerVue, homePage, footerVue, blogDitails, blog, productDetails, projectPage, projectDitails
   }
 };
 </script>
