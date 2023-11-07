@@ -4,8 +4,8 @@
         </div>
         <div class="banner">
             <div class="banner__intro">
-                <h1 class="banner__intro-title">Articles & News</h1>
-                <p class="banner__intro-text">Home / Blog</p>
+                <h1 class="banner__intro-title">Our Project</h1>
+                <p class="banner__intro-text">Home / Project</p>
             </div>
         </div>
     </section>
@@ -55,16 +55,27 @@
             </div>
         </div>
     </section>
-    <div class="pages-links center">
-        <a class="link-circles" href="">01</a>
-        <a class="link-circles" href="">02</a>
-        <a class="link-circles" href="">03</a>
-        <a class="link-circles" href=""><svg width="53" height="52" viewBox="0 0 53 52" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M23.5571 32L29.5 25.3143L23.5571 18.6286" stroke="#292F36" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-            </svg></a>
-    </div>
+    <div class="count__page">
+            <div class="count__page-wrap">
+                <a href="#" class="count__page-number">
+                    <p class="count__page-number-text">01</p>
+                </a>
+                <a href="#" class="count__page-number">
+                    <p class="count__page-number-text">02</p>
+                </a>
+                <a href="#" class="count__page-number">
+                    <p class="count__page-number-text">03</p>
+                </a>
+                <a href="#">
+                    <svg class="count__page-svg" xmlns="http://www.w3.org/2000/svg" width="53" height="52"
+                        viewBox="0 0 53 52" fill="none">
+                        <circle cx="26.5" cy="26" r="25.5" stroke="#CDA274" />
+                        <path d="M23.5571 32L29.5 25.3143L23.5571 18.6286" stroke="#292F36" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+        </div>
 </template>
 <script>
 export default {
@@ -144,152 +155,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.center {
-    padding-left: calc(50% - 1200px / 2);
-    padding-right: calc(50% - 1200px / 2);
-}
-
-.banner {
-    background-image: url("../assets/img/project/Baner1.jpg");
-    height: 356px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-
-    &__intro {
-        text-align: center;
-        background: #fff;
-        padding: 41px 78px;
-        border-top-left-radius: 37px;
-        border-top-right-radius: 37px;
-
-        &-title {
-            color: #292f36;
-            font-family: DM Serif Display;
-            font-size: 50px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 125%;
-        }
-
-        &-text {
-            color: #4d5053;
-            font-family: Jost;
-            font-size: 22px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 150%;
-            letter-spacing: 0.22px;
-        }
-    }
-}
-
-.buttonCards {
-    cursor: pointer;
-    padding: 26px 66px;
-    margin-left: -66px;
-    margin-right: -66px;
-
-    color: #292F36;
-    text-align: center;
-    font-size: 18px;
-    font-style: normal;
-    line-height: 125%;
-    letter-spacing: 0.36px;
-
-    &:hover {
-        color: #FFF;
-        border-radius: 18px;
-        background: #CDA274;
-    }
-
-    .active {
-        color: #FFF;
-        border-radius: 18px;
-        background: #CDA274;
-    }
-}
-
-.buttons_project {
-    display: flex;
-    justify-content: center;
-    gap: 133px;
-    border-radius: 18px;
-    align-items: center;
-
-    margin-top: 200px;
-    margin-bottom: 61px;
-
-
-
-    &-button {
-        cursor: pointer;
-        padding: 26px 66px;
-        margin-left: -66px;
-        margin-right: -66px;
-
-        color: #292F36;
-        text-align: center;
-        font-size: 18px;
-        font-style: normal;
-        line-height: 125%;
-        letter-spacing: 0.36px;
-
-        &:hover {
-            color: #FFF;
-            border-radius: 18px;
-            background: #CDA274;
-        }
-    }
-
-    .active {
-        color: #FFF;
-        border-radius: 18px;
-        background: #CDA274;
-    }
-}
-
-.project-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.title-description {
-    color: #292F36;
-    font-family: DM Serif Display;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 125%;
-    letter-spacing: 0.5px;
-}
-
-.link-circles {
-    width: 65px;
-    height: 65px;
-    display: flex;
-    border-radius: 50%;
-    border: 1px solid #CDA274;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-}
-
-.project-card {
-    position: relative;
-}
-
-.for-star {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-}
-
-.pages-links {
-    display: flex;
-    justify-content: center;
-    margin-top: 61px;
-    gap: 10px;
-}
 </style>

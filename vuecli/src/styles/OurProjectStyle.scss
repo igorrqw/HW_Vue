@@ -1,0 +1,75 @@
+.center {
+    padding-left: calc(50% - 1200px / 2);
+    padding-right: calc(50% - 1200px / 2);
+}
+
+.banner_slider {
+    background-image: url("../assets/img/baner3.jpg");
+    height: 356px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.project-details__heading{
+    color: #292F36;
+    font-family: DM Serif Display;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 62.5px */
+    letter-spacing: 1px;
+}
+
+.project-details__text{
+    color: #4D5053;
+    font-family: Jost;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 33px */
+    letter-spacing: 0.22px;
+    margin-bottom: 15px;
+}
+
+.project-details {
+    display: flex;
+    justify-content: center;
+
+}
+
+.project-details__content {
+    width: 600px;
+    margin-top: 175px;
+    margin-bottom: 76px;
+}
+
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 1285px;
+    height: 910px;
+    object-fit: cover;
+    border-radius: 10%;
+}

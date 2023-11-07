@@ -1,0 +1,153 @@
+
+.center {
+    padding-left: calc(50% - 1200px / 2);
+    padding-right: calc(50% - 1200px / 2);
+}
+
+.banner {
+    background-image: url("../assets/img/project/Baner1.jpg");
+    height: 356px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    &__intro {
+        text-align: center;
+        background: #fff;
+        padding: 41px 78px;
+        border-top-left-radius: 37px;
+        border-top-right-radius: 37px;
+
+        &-title {
+            color: #292f36;
+            font-family: DM Serif Display;
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 125%;
+        }
+
+        &-text {
+            color: #4d5053;
+            font-family: Jost;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            letter-spacing: 0.22px;
+        }
+    }
+}
+
+.buttonCards {
+    cursor: pointer;
+    padding: 26px 66px;
+    margin-left: -66px;
+    margin-right: -66px;
+
+    color: #292F36;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 125%;
+    letter-spacing: 0.36px;
+    font-family: Jost;
+    font-weight: 600;
+    border-radius: 18px;
+
+    &:hover {
+        color: #FFF;
+        border-radius: 18px;
+        background: #CDA274;
+    }
+
+    .active {
+        color: #FFF;
+        border-radius: 18px;
+        background: #CDA274;
+    }
+}
+
+.buttons_project {
+    display: flex;
+    justify-content: center;
+    gap: 133px;
+    border-radius: 18px;
+    align-items: center;
+
+    margin-top: 200px;
+    margin-bottom: 61px;
+
+
+
+    &-button {
+        cursor: pointer;
+        padding: 26px 66px;
+        margin-left: -66px;
+        margin-right: -66px;
+
+        color: #292F36;
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        line-height: 125%;
+        letter-spacing: 0.36px;
+
+        &:hover {
+            color: #FFF;
+            border-radius: 18px;
+            background: #CDA274;
+        }
+    }
+
+    .active {
+        color: #FFF;
+        border-radius: 18px;
+        background: #CDA274;
+    }
+}
+
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.title-description {
+    color: #292F36;
+    font-family: DM Serif Display;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 0.5px;
+}
+
+.link-circles {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    border-radius: 50%;
+    border: 1px solid #CDA274;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.project-card {
+    position: relative;
+}
+
+.for-star {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.pages-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 61px;
+    gap: 10px;
+}
